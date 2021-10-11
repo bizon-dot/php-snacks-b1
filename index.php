@@ -42,15 +42,14 @@ echo '</ul>';
 <!--  Snack2 -->
 
 <?php
-
-
-
-
-// if(isset($_GET['name']) or (isset($_GET['email']) or (isset($_GET['age']))) {
-
-// }
-
-
+    $name = $_GET["name"];
+    $email = $_GET["email"];
+    $age = $_GET["age"];
+    if (strlen($name)>3 && strpos($mail, "@") && strpos($email, ".") && is_numeric($age)) {
+        echo "<h1>OK</h1>";
+    } else {
+        echo "<h1>KO</h1>";
+    }
 ?>
 
 <!-- Snack3 -->

@@ -1,36 +1,3 @@
-<!-- 
-
-    ## Snack 1
-        Creiamo un array contenente le partite di basket di un’ipotetica tappa
-        del calendario.
-        Ogni array avrà una squadra di casa e una squadra ospite,
-        punti fatti dalla squadra di casa e punti fatti dalla squadra ospite.
-        Stampiamo a schermo tutte le partite con questo schema.
-        Olimpia Milano - Cantù | 55-60
-    
-    ## Snack 2
-        Passare come parametri GET name, mail e age e verificare
-        (cercando i metodi che non conosciamo nella documentazione) che name
-        sia più lungo di 3 caratteri,
-        che mail contenga un punto e una chiocciola e che age sia un numero.
-        Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato”
-
-    ## Snack 3
-        Creare un array di array. Ogni array figlio avrà come chiave una data in questo formato: DD-MM-YYYY es 01-01-2007 e come valore
-        un array di post associati a quella data. Stampare ogni data con i relativi post.
-        Qui l’array di esempio: https://www.codepile.net/pile/R2K5d68z
-        codepile.netcodepile.net
-        CodePile | Easily Share Piles of Code
-        {{ description }}
-
-                
-
-      
-
- -->
-
- <!-- SNACK1 -->
-
 <?php
 
 
@@ -140,8 +107,6 @@ foreach ($posts as $key => $value) {
 </body>
 </html> 
 
-
-
 <!-- Snack4 -->
 
 <html>
@@ -161,3 +126,10 @@ for($i = 0; $i < 15; $i++){
 </ul>
 </body>
 </html> 
+
+<!-- Snack5 -->
+
+<?php 
+        $str = "Lorem ipsum dolor sit amet. Ex facere perspiciatis At tempora reiciendis qui deserunt voluptatem non temporibus iure aut obcaecati velit ut impedit eveniet ut consequatur assumenda. Sed illo totam et cumque dicta non rerum dignissimos ut cupiditate temporibus. Et ratione culpa eum omnis architecto aut dignissimos error quo animi enim! In ducimus autem eum beatae inventore in optio deserunt est maiores repellendus sit iusto dolore ea asperiores reprehenderit! Sed deserunt autem est commodi atque et laboriosam totam cum fugit voluptatem qui perspiciatis minus! Qui suscipit aperiam eum necessitatibus aperiam et architecto nihil est enim inventore sed sunt perspiciatis. Et sint tempora non culpa expedita est nulla sunt nam modi maiores et nulla harum et minus inventore? Non reprehenderit consequuntur non voluptatibus optio non magni nostrum et minima voluptatum qui accusantium ipsa eos corrupti facilis. Non enim quis et temporibus nihil ut vitae officiis eos quisquam quasi. Ut quos facere rem enim molestiae sit pariatur nisi qui inventore perspiciatis qui aperiam dignissimos.   Qui explicabo laudantium aut illo ipsa aut nemo enim non odio nulla et quia eaque non soluta vero? Et sapiente distinctio ad voluptas fugit sed ullam debitis ea numquam atque et illum officia. Eos eaque necessitatibus sit dolore voluptatem est doloribus consequatur sit repellendus magnam.";
+        echo $formatStr = str_replace(".","<br /><br />", $str)
+?>

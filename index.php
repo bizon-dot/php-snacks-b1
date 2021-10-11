@@ -15,11 +15,21 @@
         che mail contenga un punto e una chiocciola e che age sia un numero.
         Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato”
 
+    ## Snack 3
+        Creare un array di array. Ogni array figlio avrà come chiave una data in questo formato: DD-MM-YYYY es 01-01-2007 e come valore
+        un array di post associati a quella data. Stampare ogni data con i relativi post.
+        Qui l’array di esempio: https://www.codepile.net/pile/R2K5d68z
+        codepile.netcodepile.net
+        CodePile | Easily Share Piles of Code
+        {{ description }}
+
+                
+
       
 
  -->
 
- <!-- SNACk1 -->
+ <!-- SNACK1 -->
 
 <?php
 
@@ -61,3 +71,93 @@ for($i = 0; $i < count($match); $i++){
 echo '</ul>';
 
 ?>
+
+<!--  Snack2 -->
+
+<?php
+
+
+
+
+// if(isset($_GET['name']) or (isset($_GET['email']) or (isset($_GET['age']))) {
+
+// }
+
+
+?>
+
+<!-- Snack3 -->
+
+
+<html>
+<body>
+<ul>
+<?php
+$posts = [
+
+    '10/01/2019' => [
+        [
+            'title' => 'Post 1',
+            'author' => 'Michele Papagni',
+            'text' => 'Testo post 1'
+        ],
+        [
+            'title' => 'Post 2',
+            'author' => 'Michele Papagni',
+            'text' => 'Testo post 2'
+        ],
+    ],
+    '10/02/2019' => [
+        [
+            'title' => 'Post 3',
+            'author' => 'Michele Papagni',
+            'text' => 'Testo post 3'
+        ]
+    ],
+    '15/05/2019' => [
+        [
+            'title' => 'Post 4',
+            'author' => 'Michele Papagni',
+            'text' => 'Testo post 4'
+        ],
+        [
+            'title' => 'Post 5',
+            'author' => 'Michele Papagni',
+            'text' => 'Testo post 5'
+        ],
+        [
+            'title' => 'Post 6',
+            'author' => 'Michele Papagni',
+            'text' => 'Testo post 6'
+        ]
+    ],
+];
+foreach ($posts as $key => $value) {
+    foreach ($value as $data)
+    echo ("<li>" . $key . "-->". " Titolo: ". $data["title"].  " Author: ". $data["author"].  " Titolo: ". $data["text"]."</li>");
+} ?>
+</ul>
+</body>
+</html> 
+
+
+
+<!-- Snack4 -->
+
+<html>
+<head></head>
+<body>
+<ul>
+<?php 
+$numbers = [];
+for($i = 0; $i < 15; $i++){
+    $number = mt_rand(1, 100);
+    is_array($number) ? false : array_push($numbers, $number);    
+} ?>
+
+<?php foreach ($numbers as $key => $value) {
+    echo ("<li>" . $value . "</li>");
+} ?>
+</ul>
+</body>
+</html> 

@@ -132,3 +132,32 @@ for($i = 0; $i < 15; $i++){
         $str = "Lorem ipsum dolor sit amet. Ex facere perspiciatis At tempora reiciendis qui deserunt voluptatem non temporibus iure aut obcaecati velit ut impedit eveniet ut consequatur assumenda. Sed illo totam et cumque dicta non rerum dignissimos ut cupiditate temporibus. Et ratione culpa eum omnis architecto aut dignissimos error quo animi enim! In ducimus autem eum beatae inventore in optio deserunt est maiores repellendus sit iusto dolore ea asperiores reprehenderit! Sed deserunt autem est commodi atque et laboriosam totam cum fugit voluptatem qui perspiciatis minus! Qui suscipit aperiam eum necessitatibus aperiam et architecto nihil est enim inventore sed sunt perspiciatis. Et sint tempora non culpa expedita est nulla sunt nam modi maiores et nulla harum et minus inventore? Non reprehenderit consequuntur non voluptatibus optio non magni nostrum et minima voluptatum qui accusantium ipsa eos corrupti facilis. Non enim quis et temporibus nihil ut vitae officiis eos quisquam quasi. Ut quos facere rem enim molestiae sit pariatur nisi qui inventore perspiciatis qui aperiam dignissimos.   Qui explicabo laudantium aut illo ipsa aut nemo enim non odio nulla et quia eaque non soluta vero? Et sapiente distinctio ad voluptas fugit sed ullam debitis ea numquam atque et illum officia. Eos eaque necessitatibus sit dolore voluptatem est doloribus consequatur sit repellendus magnam.";
         echo $formatStr = str_replace(".","<br /><br />", $str)
 ?>
+
+<!-- Snack6 -->
+
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<?php require "database.php";?>
+<ul class="teachers">
+<?php 
+    foreach ($db["teachers"] as $key => $teacher) {
+        echo ("<li>". $teacher["name"] . " " . $teacher["lastname"] ."</li>");
+    }
+?>
+
+</ul>
+
+<ul class="pm">
+<?php 
+    foreach ($db["pm"] as $key => $pm) {
+        echo ("<li>". $pm["name"] . " " . $pm["lastname"] ."</li>");
+    }
+?>
+
+</ul>
+</body>
+</html> 
+

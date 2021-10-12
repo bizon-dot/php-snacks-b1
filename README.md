@@ -25,3 +25,6 @@
 
 ## Snack 5 
         Prendere un paragrafo abbastanza lungo, contenente diverse frasi. Prendere il paragrafo e suddividerlo in tanti paragrafi. Ogni punto un nuovo paragrafo.
+
+## Snack 6
+        Utilizzare questo array: https://pastebin.com/CkX3680A. Includerlo in un file database.php... Stampiamo poi il nostro array mettendo gli insegnanti in un           rettangolo grigio e i PM in un rettangolo verde.

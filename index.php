@@ -161,3 +161,35 @@ for($i = 0; $i < 15; $i++){
 </body>
 </html> 
 
+tml>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <?php require "database.php";
+
+$banners = [];
+foreach ($ads as $ad){
+    ($ad["is_active"]) ? $banners[] =  $ad : null;
+}
+$maxNumRand = count($banners) - 1;
+$index = rand(0, $maxNumRand);
+$banner = $banners[$index];
+
+
+
+?>
+    <div class="banner">
+        <?php 
+    echo '<img src="' . $banner["image_path"] . '">'
+?>
+
+    </div>
+
+
+</body>
+
+</html>
+

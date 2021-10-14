@@ -8,3 +8,15 @@
     list-style:none; 
     background-color: green;
 }
+
+#Snack7
+
+.banner{
+    width: 700px;
+    height:350px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}

@@ -193,3 +193,33 @@ $banner = $banners[$index];
 
 </html>
 
+<!-- Snack7 --!>
+
+<?php include  "database.php";
+if (isset($_GET["parking"])) {
+    $filteredHotels = [];
+    foreach ($hotels as $hotel) {
+        ($hotel["parking"] ? array_push($filteredHotels, $hotel) : null);
+    }
+
+} else if (isset($_GET["stars"])) {
+    $stars = $_GET["stars"];
+    $filteredHotels = [];
+    foreach ($hotels as $hotel) {
+        ($hotel["vote"] > $stars ? array_push($filteredHotels, $hotel) : null);
+    }
+
+} else if(isset($_GET["center"]) {
+    $km = $_GET["km"];
+    foreach ($hotels as $hotel) {
+        ($hotel["km"] < $km ? array_push($filteredHotels, $hotel) : null);
+    }
+
+} else {
+    $filteredHotels = [];
+    $filteredHotels = $hotels;
+
+}
+
+?>
+
